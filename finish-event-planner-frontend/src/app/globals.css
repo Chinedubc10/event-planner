@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+/* 2. Define your custom component styles */
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-md
+           overflow-hidden transition-all duration-300
+           hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white font-medium
+           py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300
+           dark:bg-gray-700 dark:hover:bg-gray-600
+           font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .input-field {
+    @apply w-full p-3 border border-gray-300
+           dark:border-gray-600 rounded-lg
+           bg-white dark:bg-gray-800
+           focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  /* Emoji picker styling */
+  .emoji-option {
+    @apply text-2xl p-2 rounded-full
+           bg-gray-100 dark:bg-gray-700
+           cursor-pointer transition-colors;
+  }
+
+  .emoji-option:hover {
+    @apply bg-blue-100 dark:bg-blue-900;
+  }
+
+  .emoji-option.selected {
+    @apply bg-blue-200 dark:bg-blue-800;
+  }
+}
