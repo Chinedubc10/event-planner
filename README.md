@@ -75,4 +75,5 @@ curl -X POST $NEXT_PUBLIC_API_URL -H "Content-Type: application/json" \
 - Document any new env vars or DB migrations in the PR.
 
 ### License
-- MIT — add a LICENSE file and update it with your name and year.
+- MIT.
+- Apache.
